@@ -8,8 +8,7 @@
  * @author Charles Sandidge charles@cultivatingcoders.com
  **/
 
-class Bulletin implements JsonSerializable
-{
+class Bulletin implements JsonSerializable {
 
     /**
      *id for a bulletin this is primary key
