@@ -5,7 +5,8 @@
         </head>
     <body>
         <h1>Hello Cultivating Coders Students!</h1>
-    <h2>Lets test the connnection</h2>
+    <h2>CC Student Server coming soon!</h2>
     </body>
 
     </html>
+
