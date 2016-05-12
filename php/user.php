@@ -395,8 +395,8 @@ class User implements JsonSerializable {
         }
         //create query template
         $query
-            = "INSERT INTO user(accessLevelId, activation, email, firstName, hash, lastName, phone, profilePath, salt)
-		VALUES (:accessLevel, :activation, :email, :firstName, :hash, :lastName, :phone, :profilePath, :salt)";
+            = "INSERT INTO user(accessLevelId, activation, email, firstName, hash, lastName, phone, profilePath, salt)" .
+		"VALUES(:accessLevel, :activation, :email, :firstName, :hash, :lastName, :phone, :profilePath, :salt)";
         $statement = $pdo->prepare($query);
 
         // bind the variables to the place holders in the template

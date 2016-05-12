@@ -25,7 +25,7 @@ try {
 
 
     // grab the mySQL connection
-    $pdo = connectToEncryptedMySql("/etc/apache2/ccstudents-mysql/ccstudents.ini");
+   // $pdo = connectToEncryptedMySql("/etc/apache2/ccstudents-mysql/ccstudents.ini");
 
 
     // handle all RESTful calls to User today

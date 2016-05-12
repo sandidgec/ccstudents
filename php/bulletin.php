@@ -19,7 +19,7 @@ class Bulletin implements JsonSerializable {
      * attaches key for user posting bulletin
      * @var int $userId foreign key for userId
      */
-    private userId;
+    private $userId;
     /**
      * describes a bulletins category
      * @var string for category description of the bulletin
@@ -187,12 +187,12 @@ class Bulletin implements JsonSerializable {
         }
         //create query template
         $query
-            = "INSERT INTO bulletin(userId, category, message)
-		VALUES (:userId, :category, :message)";
+            = "INSERT INTO bulletin(userId, category, message)" .
+		"VALUES (:userId, :category, :message)";
         $statement = $pdo->prepare($query);
 
         // bind the variables to the place holders in the template
-        $parameters = array("userId" => this->userId, "category" => $this->category, "message" => $this->message);
+        $parameters = array("userId" => $this->userId, "category" => $this->category, "message" => $this->message);
         $statement->execute($parameters);
 
         //update null bulletinId with what mySQL just gave us
