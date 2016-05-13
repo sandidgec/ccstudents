@@ -12,6 +12,7 @@ CREATE TABLE accessLevel (
   PRIMARY KEY(accessLevelId)
 );
 
+
 CREATE TABLE user (
   userId INT UNSIGNED AUTO_INCREMENT NOT NULL,
   accessLevelId TINYINT UNSIGNED NOT NULL,
@@ -26,6 +27,7 @@ CREATE TABLE user (
   PRIMARY KEY(userId),
   FOREIGN KEY(accessLevelId) REFERENCES accessLevel(accessLevelId)
 );
+
 
 CREATE TABLE bulletins (
   bulletinlId INT UNSIGNED NOT NULL,

@@ -1,6 +1,6 @@
 <?php
 require_once(dirname(dirname(__DIR__)) . "php/autoload.php");
-/**require_once(dirname(dirname(__DIR__)) . "php/lib/xsrf.php");*/
+/**require_once(dirname(dirname(__DIR__)) . "php/xsrf.php");*/
 
 
 // start the session and create a XSRF token
